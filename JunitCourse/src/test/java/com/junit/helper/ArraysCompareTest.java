@@ -10,13 +10,12 @@ public class ArraysCompareTest {
 
 	@Test
 	public void testAssertArrayEquals() {
-
-	int [] numbers = {12,10,1,2};
-	int [] expectedValue = {1,2,10,12};
-	Arrays.sort(numbers);
-	assertArrayEquals(expectedValue, numbers);
+		int [] numbers = {12,10,1,2};
+		int [] expectedValue = {1,2,10,12};
+		Arrays.sort(numbers);
+		assertArrayEquals(expectedValue, numbers);
 	}
-	
+
 	@Test(expected = NullPointerException.class)
 	public void testArraySort_NullArray() {
 		int [] numbers = null;
